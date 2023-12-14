@@ -1,1 +1,31 @@
-<p>rating-form works!</p>
+<article class="container">
+  <div class="icon-wrapper">
+    <i class="fas fa-star star-icon"></i>
+  </div>
+  <div>
+    <h3 class="info-title">How did we do?</h3>
+    <p class="info-text">
+      Please let us know how we did with your support request. All feedback is
+      appreciated to help us improve our offering
+    </p>
+    <form (ngSubmit)="submitRating()">
+      <div class="btn-group" data-toggle="buttons">
+        <label
+          class="btn btn-primary"
+          *ngFor="let i of [1, 2, 3, 4, 5]"
+          [class.active]="rating === i"
+        >
+          <input
+            type="radio"
+            [(ngModel)]="rating"
+            name="rating"
+            [value]="i"
+            hidden
+          />
+          {{ i }}
+        </label>
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+  </div>
+</article>

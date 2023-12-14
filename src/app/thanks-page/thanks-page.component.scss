@@ -1,0 +1,56 @@
+// Varibles
+// Primary
+$orange: hsl(25, 97%, 53%);
+
+// Neutral
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+
+.container {
+  height: clamp(350px, 40vh, 500px);
+  width: clamp(300px, 50vw, 400px);
+  background-color: $darkBlue;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.img-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.results-wrapper {
+  background-color: hsl(216, 19%, 25%);
+  padding: 0.7rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results {
+  color: $orange;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+
+.thnx-title {
+  color: $white;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.thnx-msg {
+  color: $lightGrey;
+  font-size: 0.9rem;
+  text-align: center;
+  padding-inline: 1rem;
+}

@@ -1,1 +1,15 @@
-<p>thanks-page works!</p>
+<article class="container">
+  <div class="img-wrapper">
+    <img src="/assets/svgs/illustration-thank-you.svg" alt="Thank you image" />
+  </div>
+  <div class="results-wrapper">
+    <p class="results">You selected {{ rating$ | async }} out of 5</p>
+  </div>
+  <div>
+    <h3 class="thnx-title">Thank You!</h3>
+    <p class="thnx-msg">
+      We appreciate you taking the time to give a rating. If you ever need more
+      support, don't hesitate to get in touch.
+    </p>
+  </div>
+</article>
