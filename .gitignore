@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/interactive-rating-component-main
 
 # Node
 /node_modules
